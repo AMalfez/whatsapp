@@ -1,0 +1,42 @@
+.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.signup >form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 80%;
+    padding: 10px;
+}
+input{
+    border-radius: 5px;
+    width: 95%;
+    padding: 8px;
+    border: 0;
+    outline: none;
+}
+button{
+    padding: 10px;
+    width: 80px;
+    background-color: lightgreen;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(89, 194, 89);
+}
+.login__text{
+    cursor: pointer;
+    margin-top: 15px;
+}

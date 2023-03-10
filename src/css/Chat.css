@@ -1,0 +1,114 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  height: 100%;
+}
+
+@media screen and (max-width:500px){
+  .chat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+  }
+  .none{
+    display: none;
+  }
+}
+
+.chat__header {
+  height: 8.8%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+}
+.header__info {
+  flex: 1;
+  padding-left: 15px;
+}
+.header__right {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+.chat__body {
+  flex: 1;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-7yZh3iPKr-6_5jYUc5AaHfylAaBq4yrW141PQcv6F0HnRP_en1T1BxNCdNfbaVxxeU&usqp=CAU");
+  overflow: scroll;
+  background-repeat: repeat;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #b7b6b6;
+}
+.chat__message {
+  background-color: white;
+  width: fit-content;
+  cursor: pointer;
+  max-width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+.messager__name {
+  position: absolute;
+  top: -15px;
+  font-size: x-small;
+  font-weight: 600;
+}
+.timestamp {
+  font-size: x-small;
+  margin-left: 5px;
+}
+.chat__message .message {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.sender {
+  background-color: rgb(202, 243, 202);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 15px;
+  position: relative;
+  margin-bottom: 35px;
+  align-self: flex-end;
+}
+.chat__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 50px;
+}
+.message__bar {
+  flex: 1;
+  display: flex;
+}
+.message__bar > input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.message__bar > button {
+  display: none;
+}
